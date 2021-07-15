@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="trace" monitorInterval="60">
+    <Properties>
+        <!--<property name="LOG_FILE">C:\Users\cicak\Documents\app_log\samoedra_aquatic\samoedra_aquatic\store.log</property>-->
+        <!--<Property name="LOG_FILE_PATTERN">C:\Users\cicak\Documents\app_log\samoedra_aquatic\samoedra_aquatic\store_%d{yyyy-MM-dd}.log</Property>-->
+        <property name="LOG_FILE">/home/guest/Documents/sample_log/samoedra_aquatic/store.log</property>
+        <Property name="LOG_FILE_PATTERN">/home/guest/Documents/sample_log/samoedra_aquatic/store_%d{yyyy-MM-dd}.log</Property>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %c: %m%n</Property>
+        <Property name="LOG_ROOT_LEVEL">info</Property>
+    </Properties>
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        <RollingFile name="DailyAppender" fileName="${LOG_FILE}"
+             filePattern="${LOG_FILE_PATTERN}">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="aplikasi.kulakan" level="debug" additivity="false">
+            <!--<AppenderRef ref="ConsoleAppender"/>-->
+            <AppenderRef ref="DailyAppender"/>
+        </Logger>
+        <Root level="${LOG_ROOT_LEVEL}">
+            <AppenderRef ref="ConsoleAppender"/>
+            <!-- <AppenderRef ref="DailyAppender"/>-->
+        </Root>
+    </Loggers>
+</Configuration>
