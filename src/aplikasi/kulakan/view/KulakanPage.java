@@ -114,195 +114,139 @@ public class KulakanPage extends javax.swing.JPanel {
         java.awt.GridBagConstraints gridBagConstraints;
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        monthOption = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
-        supplierNameOption = new javax.swing.JComboBox<>();
-        searchButton = new javax.swing.JButton();
-        AddToCartButton = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
-        printButton = new javax.swing.JButton();
-        tahunParameter = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        barangField = new javax.swing.JTextField();
-        rekapButton = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        monthOption = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
+        searchButton = new javax.swing.JButton();
+        barangField = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        supplierNameOption = new javax.swing.JComboBox<>();
+        jLabel2 = new javax.swing.JLabel();
+        tahunParameter = new javax.swing.JComboBox<>();
         tanggalField = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
+        printButton = new javax.swing.JButton();
+        rekapButton = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        AddToCartButton = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         viewTable = new javax.swing.JTable();
 
         setLayout(new java.awt.BorderLayout());
 
-        jPanel1.setPreferredSize(new java.awt.Dimension(800, 75));
-        jPanel1.setLayout(new java.awt.GridBagLayout());
+        jPanel1.setMinimumSize(new java.awt.Dimension(1200, 110));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1200, 110));
+        jPanel1.setLayout(new java.awt.BorderLayout());
 
-        jLabel1.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        jLabel1.setText("Bulan");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(11, 8, 0, 0);
-        jPanel1.add(jLabel1, gridBagConstraints);
+        jPanel3.setPreferredSize(new java.awt.Dimension(600, 106));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setText("Tgl");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 13, 52, -1));
+        jLabel5.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+
+        jLabel4.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+        jLabel4.setText("Nama Barang");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 44, -1, -1));
 
         monthOption.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
         monthOption.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 5;
-        gridBagConstraints.ipadx = 87;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 12, 0, 0);
-        jPanel1.add(monthOption, gridBagConstraints);
+        jPanel3.add(monthOption, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 39, 177, -1));
 
-        jLabel2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        jLabel2.setText("supplier");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 6;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(10, 18, 0, 0);
-        jPanel1.add(jLabel2, gridBagConstraints);
-
-        supplierNameOption.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        supplierNameOption.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierNameOption.setMaximumSize(new java.awt.Dimension(120, 25));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 7;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 4;
-        gridBagConstraints.ipadx = 47;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(5, 6, 0, 0);
-        jPanel1.add(supplierNameOption, gridBagConstraints);
+        jLabel1.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+        jLabel1.setText("Bulan");
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 44, 52, -1));
 
         searchButton.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
         searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi/kulakan/images/1478801823_11_Search.png"))); // NOI18N
         searchButton.setText("CARI");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 7;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridheight = 4;
-        gridBagConstraints.ipadx = 39;
-        gridBagConstraints.ipady = -7;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
-        jPanel1.add(searchButton, gridBagConstraints);
+        jPanel3.add(searchButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 70, 257, 30));
 
-        AddToCartButton.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        AddToCartButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi/kulakan/images/iconfinder_notification_add_48783.png"))); // NOI18N
-        AddToCartButton.setText("TAMBAH");
-        AddToCartButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        AddToCartButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 9;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 11;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 6, 2, 0);
-        jPanel1.add(AddToCartButton, gridBagConstraints);
+        barangField.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+        jPanel3.add(barangField, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 156, -1));
 
-        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 8;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 10;
-        gridBagConstraints.ipadx = 1;
-        gridBagConstraints.ipady = 70;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 12, 0, 0);
-        jPanel1.add(jSeparator1, gridBagConstraints);
+        jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+        jLabel3.setText("Tahun");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 78, 52, -1));
+
+        supplierNameOption.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+        supplierNameOption.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        supplierNameOption.setMaximumSize(new java.awt.Dimension(120, 25));
+        jPanel3.add(supplierNameOption, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 8, 156, -1));
+
+        jLabel2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+        jLabel2.setText("Supplier");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 13, 95, -1));
+
+        tahunParameter.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+        tahunParameter.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel3.add(tahunParameter, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 73, 177, -1));
+        jPanel3.add(tanggalField, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 9, 177, -1));
+
+        jPanel1.add(jPanel3, java.awt.BorderLayout.WEST);
+
+        jPanel4.setPreferredSize(new java.awt.Dimension(600, 88));
 
         printButton.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
         printButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi/kulakan/images/1480022303_BT_printer.png"))); // NOI18N
         printButton.setText("EXPORT");
         printButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         printButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 10;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 11;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 6, 2, 0);
-        jPanel1.add(printButton, gridBagConstraints);
-
-        tahunParameter.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        tahunParameter.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridheight = 4;
-        gridBagConstraints.ipadx = 87;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 12, 0, 0);
-        jPanel1.add(tahunParameter, gridBagConstraints);
-
-        jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        jLabel3.setText("Tahun");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(11, 8, 0, 0);
-        jPanel1.add(jLabel3, gridBagConstraints);
-
-        jLabel4.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        jLabel4.setText("Nama Barang");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(9, 8, 0, 0);
-        jPanel1.add(jLabel4, gridBagConstraints);
-
-        barangField.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridheight = 3;
-        gridBagConstraints.ipadx = 146;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(7, 11, 0, 0);
-        jPanel1.add(barangField, gridBagConstraints);
 
         rekapButton.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12));
         rekapButton.setText("REKAP");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 11;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 11;
-        gridBagConstraints.ipady = 36;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 6, 2, 0);
-        jPanel1.add(rekapButton, gridBagConstraints);
+        rekapButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rekapButtonActionPerformed(evt);
+            }
+        });
 
-        jLabel5.setText("Tgl");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(10, 8, 0, 0);
-        jPanel1.add(jLabel5, gridBagConstraints);
-        jLabel5.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 3;
-        gridBagConstraints.ipadx = 146;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 11, 0, 0);
-        jPanel1.add(tanggalField, gridBagConstraints);
+        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator1.setPreferredSize(new java.awt.Dimension(10, 30));
+
+        AddToCartButton.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
+        AddToCartButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplikasi/kulakan/images/iconfinder_notification_add_48783.png"))); // NOI18N
+        AddToCartButton.setText("TAMBAH");
+        AddToCartButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        AddToCartButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(AddToCartButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(printButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(rekapButton)
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(AddToCartButton)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(printButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(rekapButton, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel4, java.awt.BorderLayout.EAST);
 
         add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
-        jPanel2.setPreferredSize(new java.awt.Dimension(800, 425));
+        jPanel2.setMinimumSize(new java.awt.Dimension(1200, 390));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1200, 390));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
         viewTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -332,6 +276,10 @@ public class KulakanPage extends javax.swing.JPanel {
         add(jPanel2, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void rekapButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rekapButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rekapButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddToCartButton;
@@ -343,6 +291,8 @@ public class KulakanPage extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JComboBox<String> monthOption;
